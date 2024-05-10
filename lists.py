@@ -1,10 +1,18 @@
 def remove_elements(list_to_remove_elements):
-    if len(list_to_remove_elements)>0:
+    if len(list_to_remove_elements)>=6:
         del list_to_remove_elements[0]
-        del list_to_remove_elements[3:5]
+        del list_to_remove_elements[3]
+        del list_to_remove_elements[3]
+        return list_to_remove_elements
+    elif len(list_to_remove_elements)<6 and len(list_to_remove_elements)>=5:
+        del list_to_remove_elements[0]
+        del list_to_remove_elements[3]
+        return list_to_remove_elements
+    elif len(list_to_remove_elements)<5:
+        del list_to_remove_elements[0]
         return list_to_remove_elements
     else:
-        return "La lista no es válida"
+        return list_to_remove_elements
 remove_elements(['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow'])
 
 def add_elements(list_to_add_elements):
