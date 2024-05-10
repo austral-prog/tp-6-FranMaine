@@ -44,5 +44,3 @@ def list_of_lists(list_of_lists_to_modify):
     list_of_lists_to_modify=[list_of_lists_to_modify[0][0:2]]+[list_of_lists_to_modify[1][1:4]]+[list_of_lists_to_modify[2][-2:]]
     return list_of_lists_to_modify
 list_of_lists([[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]])
-    return list_of_lists_to_modify
-list_of_lists([[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]])
