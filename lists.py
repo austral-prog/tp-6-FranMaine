@@ -1,16 +1,17 @@
 def remove_elements(list_to_remove_elements):
-    if len(list_to_remove_elements)>=6:
-        del list_to_remove_elements[0]
-        del list_to_remove_elements[3]
-        del list_to_remove_elements[3]
-        return list_to_remove_elements
-    elif len(list_to_remove_elements)<6 and len(list_to_remove_elements)>=5:
-        del list_to_remove_elements[0]
-        del list_to_remove_elements[3]
-        return list_to_remove_elements
-    elif len(list_to_remove_elements)<5:
-        del list_to_remove_elements[0]
-        return list_to_remove_elements
+    if len(list_to_remove_elements)>0:
+        if len(list_to_remove_elements)>=6:
+            del list_to_remove_elements[0]
+            del list_to_remove_elements[3]
+            del list_to_remove_elements[3]
+            return list_to_remove_elements
+        elif len(list_to_remove_elements)<6 and len(list_to_remove_elements)>=5:
+            del list_to_remove_elements[0]
+            del list_to_remove_elements[3]
+            return list_to_remove_elements
+        elif len(list_to_remove_elements)<5:
+            del list_to_remove_elements[0]ç
+            return list_to_remove_elements
     else:
         return list_to_remove_elements
 remove_elements(['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow'])
@@ -41,5 +42,7 @@ check_lists(['Black', 'Pink', 'Yellow', 'Red', 'Green', 'White'],['Red', 'Green'
 
 def list_of_lists(list_of_lists_to_modify):
     list_of_lists_to_modify=[list_of_lists_to_modify[0][0:2]]+[list_of_lists_to_modify[1][1:4]]+[list_of_lists_to_modify[2][-2:]]
+    return list_of_lists_to_modify
+list_of_lists([[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]])
     return list_of_lists_to_modify
 list_of_lists([[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]])
